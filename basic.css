@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --rs-primary-font: "Noto Serif", serif;
+    --rs-secondary-font: "Inter", sans-serif;
+
+    --rs-primary-color: #E95A08;
+    --rs-primary-color-rgb: 233, 90, 8;
+    
+    --rs-primary-text-color: #252432;
+    --rs-primary-text-color-rgb: 233, 90, 8;
+    
+    --rs-primary-btn-bg-color: #E95A08;
+    --rs-primary-btn-text-color: #FFFFFF;
+
+    --rs-primary-btn-bg-hover-color: #ff374b;
+}
+
+body {
+    font-family: var(--rs-primary-font);
+    background-color: #F5F8FF;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-nowrap {
+    flex-wrap: nowrap;
+}
+
+.gap-0-5 {
+    gap: 4px;
+}
+
+.gap-1 {
+    gap: 8px;
+}
+
+.gap-1-5 {
+    gap: 12px;
+}
+
+.gap-2 {
+    gap: 16px;
+}
+
+.gap-3 {
+    gap: 24px;
+}
+
+.gap-4 {
+    gap: 32px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.w-100 {
+    width: 100%;
+}
