@@ -4,31 +4,50 @@
     max-width: calc(100% - 40px);
 }
 
+.header-container {
+    max-width: 100%;
+}
+
+.header-container nav,
+.header-container .hero-section div:first-child {
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
 @media (min-width: 576px) {
     .container {
         max-width: 540px;
     }
+    .header-container nav,
+    .header-container .hero-section div:first-child {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 @media (min-width: 768px) {
+    .header-container,
     .container {
         max-width: 720px;
     }
 }
 
 @media (min-width: 992px) {
+    .header-container,
     .container {
         max-width: 960px;
     }
 }
 
 @media (min-width: 1200px) {
+    .header-container,
     .container {
         max-width: 1140px;
     }
 }
 
 @media (min-width: 1400px) {
+    .header-container,
     .container {
         max-width: 1320px;
     }
@@ -95,6 +114,29 @@ header nav .cart-area h4 {
     font-weight: 400;
 }
 
+.hero-section {
+    display: flex;
+    align-items: end;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    gap: 28px;
+}
+
+.hero-section h2 {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.hero-section p {
+    font-size: 16px;
+    font-weight: normal;
+    color: rgb(0, 0, 0, 50%);
+}
+
+.hero-section img {
+    max-width: 100%;
+}
+
 @media (min-width: 992px) {
     .section-divider {
         width: 100%;
@@ -153,5 +195,22 @@ header nav .cart-area h4 {
 
     header nav .cart-area h4 {
         font-weight: 500;
+    }
+
+    .hero-section {
+        display: grid;
+        align-items: end;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero-section h2 {
+        font-size: 65px;
+        font-weight: bold;
+    }
+
+    .hero-section p {
+        font-size: 22px;
+        font-weight: normal;
+        color: rgb(0, 0, 0, 50%);
     }
 }
