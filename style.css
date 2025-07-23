@@ -10,14 +10,15 @@
 
 .header-container nav,
 .header-container .hero-section div:first-child {
-   padding-left: 20px;
-   padding-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 @media (min-width: 576px) {
     .container {
         max-width: 540px;
     }
+
     .header-container nav,
     .header-container .hero-section div:first-child {
         padding-left: 0;
@@ -26,6 +27,7 @@
 }
 
 @media (min-width: 768px) {
+
     .header-container,
     .container {
         max-width: 720px;
@@ -33,6 +35,7 @@
 }
 
 @media (min-width: 992px) {
+
     .header-container,
     .container {
         max-width: 960px;
@@ -40,6 +43,7 @@
 }
 
 @media (min-width: 1200px) {
+
     .header-container,
     .container {
         max-width: 1140px;
@@ -47,6 +51,7 @@
 }
 
 @media (min-width: 1400px) {
+
     .header-container,
     .container {
         max-width: 1320px;
@@ -137,6 +142,90 @@ header nav .cart-area h4 {
     max-width: 100%;
 }
 
+.section-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: 50px;
+}
+
+.section-header h4 {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.section-header p {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: var(--rs-secondary-font);
+    color: rgb(0, 0, 0, 50%);
+    max-width: 80%;
+    text-align: center;
+}
+
+.flower-card-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 20px;
+    justify-content: space-between;
+}
+
+.flower-img-box {
+    aspect-ratio: 3/3.6;
+    overflow: hidden;
+}
+
+.flower-img-box:hover img {
+    transform: scale(1.05)
+}
+
+.flower-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: 1s ease-in-out all;
+}
+
+.flower-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+    margin: 15px auto;
+}
+
+.flower-card-content h4 {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--rs-secondary-font);
+}
+
+.flower-card-content h6 {
+    font-size: 16px;
+    font-family: var(--rs-secondary-font);
+    font-weight: 600;
+}
+
+.flower-card button {
+    padding: 12px 10px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: var(--rs-secondary-font);
+    background-color: var(--rs-primary-color);
+    color: #FFF;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    transition: background .5s ease-in-out;
+}
+
+.flower-card button:hover {
+    background-color: #bd4500;
+}
+
 @media (min-width: 992px) {
     .section-divider {
         width: 100%;
@@ -212,5 +301,38 @@ header nav .cart-area h4 {
         font-size: 22px;
         font-weight: normal;
         color: rgb(0, 0, 0, 50%);
+    }
+
+    .section-header {
+        margin-bottom: 50px;
+    }
+
+    .section-header h4 {
+        font-size: 50px;
+    }
+
+    .section-header p {
+        font-size: 22px;
+    }
+
+    .flower-card-section {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .flower-img-box:hover img {
+        transform: scale(1.05)
+    }
+
+    .flower-card-content h4 {
+        font-size: 22px;
+    }
+
+    .flower-card-content h6 {
+        font-size: 22px;
+    }
+
+    .flower-card button {
+        padding: 18px 50px;
+        font-size: 16px;
     }
 }
