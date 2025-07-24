@@ -138,6 +138,11 @@ header nav .cart-area h4 {
     color: rgb(0, 0, 0, 50%);
 }
 
+.hero-section-img {
+    display: flex;
+    justify-content: end;
+}
+
 .hero-section img {
     max-width: 100%;
 }
@@ -167,7 +172,7 @@ header nav .cart-area h4 {
 .flower-card-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px 20px;
+    gap: 20px;
     justify-content: space-between;
 }
 
@@ -224,6 +229,41 @@ header nav .cart-area h4 {
 
 .flower-card button:hover {
     background-color: #bd4500;
+}
+
+.plants-lover-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+}
+
+.plants-lover-section .plants-lover-img {
+    position: relative;
+}
+
+.plants-lover-section .plants-lover-img img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.plants-lover-section .plants-lover-img img.trusted-badge {
+    display: none;
+}
+
+.plants-lover-section .plants-lover-content h2 {
+    font-size: 26px;
+    margin-bottom: 1rem;
+}
+
+.plants-lover-section .plants-lover-content ul {
+    margin-left: 1rem;
+    font-size: 16px;
+    font-weight: normal;
+    color: rgb(0, 0, 0, 50%);
+}
+
+.plants-lover-section .plants-lover-content ul li {
+    margin-bottom: 1rem;
 }
 
 @media (min-width: 992px) {
@@ -317,6 +357,7 @@ header nav .cart-area h4 {
 
     .flower-card-section {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 30px 20px;
     }
 
     .flower-img-box:hover img {
@@ -335,4 +376,28 @@ header nav .cart-area h4 {
         padding: 18px 50px;
         font-size: 16px;
     }
+
+    .plants-lover-section {
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: center;
+    }
+
+    .plants-lover-section .plants-lover-img img.trusted-badge {
+        display: block;
+        position: absolute;
+        top: -120px;
+        right: -120px;
+        max-width: 280px;
+        filter: drop-shadow(-4px 10px 4px rgb(0, 0, 0, 25%));
+    }
+
+    .plants-lover-section .plants-lover-content h2 {
+        font-size: 60px;
+    }
+
+    .plants-lover-section .plants-lover-content ul {
+        font-size: 22px;
+    }
+
 }
