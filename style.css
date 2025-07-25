@@ -328,6 +328,50 @@ header nav .cart-area h4 {
     background-image: url('./assets/deal-zabo.png');
 }
 
+
+.colorful-bunch-section {
+    background-image: url('./assets/news-letter-bg.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 110px;
+    padding-bottom: 65px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.colorful-bunch-section h4 {
+    color: #FFF;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.colorful-bunch-section .input-group {
+    display: flex;
+    gap: 0;
+}
+
+.colorful-bunch-section .input-group input {
+    height: 50px;
+    border: none;
+    padding: 10px 15px;
+}
+
+.colorful-bunch-section .input-group input,
+.colorful-bunch-section .input-group button {
+    outline: none;
+}
+
+.colorful-bunch-section .input-group button {
+    color: #FFFFFF;
+    background-color: var(--rs-primary-color);
+    border: none;
+    padding: 10px 15px;
+    font-weight: 600;
+}
+
 @media (min-width: 992px) {
     .section-divider {
         width: 100%;
@@ -487,13 +531,45 @@ header nav .cart-area h4 {
         grid-column: 2 / 4;
         grid-row: 1 / 3;
     }
-    
+
     .deals-card-03 h4 {
         font-size: 40px;
     }
-    
+
     .deals-card-03 a {
         font-size: 28px;
     }
 
+
+    .colorful-bunch-section {
+        --padding-size: 180px;
+        padding-top: var(--padding-size);
+        padding-bottom: var(--padding-size);
+    }
+
+    .colorful-bunch-section h4 {
+        font-size: 50px;
+        margin-bottom: 18px;
+    }
+
+    .colorful-bunch-section .input-group input {
+        height: 50px;
+        border: none;
+        padding: 10px 15px;
+        width: 640px;
+    }
+
+    .colorful-bunch-section .input-group input,
+    .colorful-bunch-section .input-group button {
+        outline: none;
+    }
+
+    .colorful-bunch-section .input-group button {
+        color: #FFFFFF;
+        background-color: var(--rs-primary-color);
+        border: none;
+        font-size: 1rem;
+        padding: 10px 50px;
+        font-weight: 600;
+    }
 }
