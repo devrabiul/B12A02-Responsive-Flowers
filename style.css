@@ -412,6 +412,21 @@ header nav .cart-area h4 {
     gap: 24px;
 }
 
+.spin-infinite {
+    animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
 @media (min-width: 992px) {
     .section-divider {
         width: 100%;
